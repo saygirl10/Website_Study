@@ -3,56 +3,33 @@
   <head>
     <title>WEB1 - JavaScript</title>
     <meta charset="UTF-8">
-    <style>
-      a {
-        color:black;
-        text-decoration: none;
-      }
-      a:visited {
-        color:gray;
-      }
-      a:hover {
-        color:maroon;
-      }
-      a:active {
-        color:lightsalmon;
-        text-decoration: underline;
-      }
-      h1 {
-        text-align: center;
-        font-size: 65px;
-        text-shadow: 5px 6px dimgray;
-        background-color: darkgray;
-      }
-      #title {
-        color:aliceblue;
-      }
-      img,iframe {
-        display: block;
-        margin: auto;
-      }
-      .aboutme {
-        text-align: right;
-      }
-    </style>
+    <link rel="stylesheet" href="style.css">
   </head>
   <body>
-    <h1><a href="index.html" class="title" id="title" title="go to home">JavaScript</a></h1>
-    <ol>
-      <li><a href="HTML.html">HTML</a></li>
-      <li><a href="CSS.html">CSS</a></li>
-      <li><a href="JavaScript.html">JavaScript</a></li>
-    </ol>
-    <h2>JavaScript란 무엇인가?</h2>
-    <p>
-      모질라 재단의 프로토타입 기반의 프로그래밍 언어로, 스크립트 언어에 해당된다.
-      <br>특수한 목적이 아닌 이상 모든 웹 브라우저에 인터프리터가 내장되어 있다.
-      <br>오늘날 HTML, CSS와 함께 웹을 구성하는 요소 중 하나다.
-      <br>HTML이 웹 페이지의 기본 구조를 담당하고, CSS가 디자인을 담당한다면 JavaScript는 클라이언트 단에서 웹 페이지가 동작하는 것을 담당한다.
-      <br>[1] 웹 페이지를 자동차에 비유하자면, HTML은 자동차의 뼈대, CSS는 자동차의 외관, JavaScript는 자동차의 동력이라고 볼 수 있다.
-    </p>
-    <iframe width="640" height="360" src="https://www.youtube.com/embed/WD-LFlMi6iA" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen>
-    </iframe>
+    <h1><a href="index.html" id="title">WEB</a></h1>
+    <div id="grid">
+      <ol>
+        <li><a href="HTML.html">HTML</a></li>
+        <li><a href="CSS.html">CSS</a></li>
+        <li><a href="JavaScript.html">JavaScript</a></li>
+      </ol>
+      <div id="article">
+      <h2>JavaScript란 무엇인가?</h2>
+      <p>
+        모질라 재단의 프로토타입 기반의 프로그래밍 언어로, 스크립트 언어에 해당된다.
+        <br>특수한 목적이 아닌 이상 모든 웹 브라우저에 인터프리터가 내장되어 있다.
+        <br>오늘날 HTML, CSS와 함께 웹을 구성하는 요소 중 하나다.
+        <br>HTML이 웹 페이지의 기본 구조를 담당하고, CSS가 디자인을 담당한다면 JavaScript는 클라이언트 단에서 웹 페이지가 동작하는 것을 담당한다.
+        <br>[1] 웹 페이지를 자동차에 비유하자면, HTML은 자동차의 뼈대, CSS는 자동차의 외관, JavaScript는 자동차의 동력이라고 볼 수 있다.
+      </p>
+      <p>
+      <iframe width="640" height="360" src="https://www.youtube.com/embed/WD-LFlMi6iA" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen>
+      </iframe>
+      </p>
+    </div>
+  </div>
+
+
     <div class="aboutme">
     <p><a href="hyeonjeong.html">KIM HYEON JEONG</a></p>
     <p><a href="checkbox.html">Check Box</a></p>

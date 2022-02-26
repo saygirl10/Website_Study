@@ -3,60 +3,37 @@
   <head>
     <title>WEB1 - HTML & Internet</title>
     <meta charset="UTF-8">
-    <style>
-      a {
-        color:black;
-        text-decoration: none;
-      }
-      a:visited {
-        color:gray;
-      }
-      a:hover {
-        color:maroon;
-      }
-      a:active {
-        color:lightsalmon;
-        text-decoration: underline;
-      }
-      h1 {
-        text-align: center;
-        font-size: 65px;
-        text-shadow: 5px 6px dimgray;
-        background-color: darkgray;
-      }
-      #title {
-        color:aliceblue;
-      }
-      img,iframe {
-        display: block;
-        margin: auto;
-      }
-      .aboutme {
-        text-align: right;
-      }
-    </style>
+    <link rel="stylesheet" href="style.css">
   </head>
   <body>
-    <h1><a href="index.html" class="title" id="title" title="go to home">HTML</a></h1>
-    <ol>
-      <li><a href="HTML.html">HTML</a></li>
-      <li><a href="CSS.html">CSS</a></li>
-      <li><a href="JavaScript.html">JavaScript</a></li>
-    </ol>
-    <h2>HTML 이란 무엇인가?</h2>
-    <p>
-      <a href="https://namu.wiki/w/HTML" target="_blank" title="html 나무위키">Hypertext Markup language (HTML)</a> is the standard markup language for <strong>creating <u>web</u> pages</strong> and web applications.
-      <br>Web browsers receive HTML documents from a web server or from localstorage and render them into multimedia web pages.
-      <br>HTML describes the structure of a web page semantically and originally included cues for the appearance of the document.
-      <br>HTML elements are the building blocks of HTML pages.
-      <br>With HTML constructs, images and other objects, such as interactive forms, may be embedded into the rendered page.
-      <br>It provides a means to create structured documents by denoting structural semantics for text such as headings, paragraphs, lists, links, quotes and other items.
-    </p>
-    <p style="margin-top:60px; margin-bottom:40px;">
-      HTML elements are delineated by tags, written using angle brackets.
-    </p>
-    <iframe width="640" height="360" src="https://www.youtube.com/embed/bTSDDyuMuUo" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen>
-    </iframe>
+    <h1><a href="index.html" id="title">WEB</a></h1>
+    <div id="grid">
+      <ol>
+        <li><a href="HTML.html">HTML</a></li>
+        <li><a href="CSS.html">CSS</a></li>
+        <li><a href="JavaScript.html">JavaScript</a></li>
+      </ol>
+      <div id="article">
+        <h2>HTML 이란 무엇인가?</h2>
+        <p>
+          <a href="https://namu.wiki/w/HTML" target="_blank" title="html 나무위키">Hypertext Markup language (HTML)</a> is the standard markup language for <strong>creating <u>web</u> pages</strong> and web applications.
+          <br>Web browsers receive HTML documents from a web server or from localstorage and render them into multimedia web pages.
+          <br>HTML describes the structure of a web page semantically and originally included cues for the appearance of the document.
+          <br>HTML elements are the building blocks of HTML pages.
+          <br>With HTML constructs, images and other objects, such as interactive forms, may be embedded into the rendered page.
+          <br>It provides a means to create structured documents by denoting structural semantics for text such as headings, paragraphs, lists, links, quotes and other items.
+        </p>
+        <p style="margin-top:60px; margin-bottom:40px;">
+          HTML elements are delineated by tags, written using angle brackets.
+        </p>
+        <p>
+        <iframe width="640" height="360" src="https://www.youtube.com/embed/bTSDDyuMuUo" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen>
+        </iframe>
+        </p>
+      </div>
+    </div>
+
+
     <div class="aboutme">
     <p><a href="hyeonjeong.html">KIM HYEON JEONG</a></p>
     <p><a href="checkbox.html">Check Box</a></p>
