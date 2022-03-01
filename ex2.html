@@ -1,0 +1,51 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <meta charset="utf-8">
+    <title></title>
+    <style>
+      .text {
+        margin: auto;
+      }
+      #grid {
+        display: grid;
+        grid-template-columns: 1fr 2fr 2fr;
+        border: 3px double orange;
+      }
+      .button {
+        border-right: 1px solid orange;
+        margin: 0;
+        display: block;
+        text-align: center;
+        padding: 20px;
+      }
+      img {
+        margin: auto;
+      }
+      .bb {
+        padding: 7px;
+        font-size: 30px;
+        margin: 2px;
+      }
+    </style>
+  </head>
+  <body>
+    <div id="grid">
+      <div class="button">
+          <div><input class="bb" type="button" value="welcome" onclick="alert('welcome :D')"></div>
+          <div><input class="bb" type="button" value="put" onclick="alert('버튼을 눌렀네요')"></div>
+      </div>
+      <div class="text">
+        <div><input type="text" onchange="alert('changed!!')"></div>
+        onchange
+        <div><input type="text" onkeydown="alert('!!key downed!!')"></div>
+        onkeydown
+        <div><input type="text" onchange="alert('Good Job!')"></div>
+        onchange
+      </div>
+      <div>
+        <img src="data/0301/star.png" width="60%" align="right">
+      </div>
+    </div>
+  </body>
+</html>
