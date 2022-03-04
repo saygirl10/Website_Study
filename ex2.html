@@ -6,6 +6,7 @@
     <style>
       .text {
         margin: auto;
+        padding: 10px;
       }
       #grid {
         display: grid;
@@ -15,17 +16,34 @@
       .button {
         border-right: 1px solid orange;
         margin: 0;
-        display: block;
         text-align: center;
         padding: 20px;
       }
       img {
-        margin: auto;
+        width: 140px;
+        display: block;
+        margin-left: auto;
+        margin-right: auto;
       }
       .bb {
         padding: 7px;
         font-size: 30px;
         margin: 2px;
+      }
+      @media (max-width:600px) {
+        .bb {
+          font-size: 15px;
+          padding: 4px;
+        }
+        .button {
+          padding-top: 35px;
+        }
+        span {
+          display: none;
+        }
+        img {
+          width: 100px;
+        }
       }
     </style>
   </head>
@@ -37,14 +55,14 @@
       </div>
       <div class="text">
         <div><input type="text" onchange="alert('changed!!')"></div>
-        onchange
+        <span>onchange</span>
         <div><input type="text" onkeydown="alert('!!key downed!!')"></div>
-        onkeydown
+        <span>onkeydown</span>
         <div><input type="text" onchange="alert('Good Job!')"></div>
-        onchange
+        <span>onchange</span>
       </div>
       <div>
-        <img src="data/0301/star.png" width="60%" align="right">
+        <img src="star.png">
       </div>
     </div>
   </body>
