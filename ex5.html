@@ -4,15 +4,20 @@
     <meta charset="utf-8">
     <title>JS - Comditional Statement</title>
     <style>
-      body {
+      body {margin: 0;
+      }
+      .contents {
         margin-left: 20px;
+      }       
+      h1 {
+        padding-left: 10px;
       }
       img {
         margin-left: 35px;
         display: block;
         width: 400px;
       }
-      .title_grid {
+      #title_grid {
         display: grid;
         grid-template-columns: 350px 1fr;
         border-bottom: 3px double saddlebrown;
@@ -28,34 +33,35 @@
     </style>
   </head>
   <body>
-    <div class="title_grid">
+    <div id="title_grid">
       <h1>Conditional Statement</h1>
       <span><a href="3_JavaScript.html"><input type="button" value="JavaScript"></a></span>
     </div>
 
+    <div class="contents">
+      <h2>If - true // if (true) {&nbsp&nbsp&nbsp}</h2>
+        <script>
+          document.write('1 : normal <br>');
+          if (true) {
+            document.write('2 : if안의 코드 <br>');
+          } else {
+            document.write('3 : else안의 코드<br>');
+          }
+          document.write('4 : normal<br>');
+        </script>
+      <img src="data/0305/if-true.png">
 
-    <h2>If - true // if (true) {&nbsp&nbsp&nbsp}</h2>
-      <script>
-        document.write('1 : normal <br>');
-        if (true) {
-          document.write('2 : if안의 코드 <br>');
-        } else {
-          document.write('3 : else안의 코드<br>');
-        }
-        document.write('4 : normal<br>');
-      </script>
-    <img src="data/0305/if-true.png">
-
-    <h2>If - false // if (false) {&nbsp&nbsp&nbsp}</h2>
-      <script>
-        document.write('1 : normal <br>');
-        if (false) {
-          document.write('2 : if안의 코드 <br>');
-        } else {
-          document.write('3 : else안의 코드 <br>');
-        }
-        document.write('4 : normal <br>');
-      </script>
-    <img src="data/0305/if-false.png">
+      <h2>If - false // if (false) {&nbsp&nbsp&nbsp}</h2>
+        <script>
+          document.write('1 : normal <br>');
+          if (false) {
+            document.write('2 : if안의 코드 <br>');
+          } else {
+            document.write('3 : else안의 코드 <br>');
+          }
+          document.write('4 : normal <br>');
+        </script>
+      <img src="data/0305/if-false.png">
+    </div>
   </body>
 </html>

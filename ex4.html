@@ -4,26 +4,31 @@
     <meta charset="utf-8">
     <title>JS - Comparison operator & Boolean</title>
     <style>
-      body {
+      body {margin: 0;
+      }
+      .contents {
         margin-left: 20px;
+      }
+      h1 {
+        padding-left: 10px;
       }
       img {
         width: 250px;
         padding-left: 15px;
-      }
-      .grid {
-        display: grid;
-        grid-template-columns: 100px 1fr;
-      }
-      .left {
-        text-align: center;
       }
       h3 {
         margin-top: 0;
         margin-bottom: 15px;
         padding-top: 35px;
       }
-      .title_grid {
+      #grid {
+        display: grid;
+        grid-template-columns: 100px 1fr;
+      }
+      .left {
+        text-align: center;
+      }
+      #title_grid {
         display: grid;
         grid-template-columns: 480px 1fr;
         border-bottom: 3px double saddlebrown;
@@ -39,50 +44,53 @@
     </style>
   </head>
   <body>
-    <div class="title_grid">
+    <div id="title_grid">
       <h1>Comparison operator & Boolean</h1>
       <span><a href="3_JavaScript.html"><input type="button" value="JavaScript"></a></span>
     </div>
-    <h3>===:동등비교연산자 / Boolean:true or false</h3>
 
-    <div class="grid">
-      <div class="left">
-        <h4>1===1</h4>
-          <script>
-            document.write(1===1);
-          </script>
-        <h4>1===2</h4>
-          <script>
-            document.write(1===2);
-          </script>
+    <div class="contents">
+      <h3>===:동등비교연산자 / Boolean:true or false</h3>
+
+      <div id="grid">
+        <div class="left">
+          <h4>1===1</h4>
+            <script>
+              document.write(1===1);
+            </script>
+          <h4>1===2</h4>
+            <script>
+              document.write(1===2);
+            </script>
+        </div>
+        <img src="data/0305/EqualComparison.png">
       </div>
-      <img src="data/0305/EqualComparison.png">
-    </div>
 
-    <h3>&lt;꺽새 표기방법&gt;
-      <br>& l t ; - 앰퍼센드LessThan; / & g t ; - 앰퍼센드GreaterThan;
-    </h3>
+      <h3>&lt;꺽새 표기방법&gt;
+        <br>& l t ; - 앰퍼센드LessThan; / & g t ; - 앰퍼센드GreaterThan;
+      </h3>
 
-    <div class="grid">
-      <div class="left">
-      <h4>1&lt;2</h4>
-        <script>
-          document.write(1<2);
-        </script>
-      <h4>1&lt;1</h4>
-        <script>
-          document.write(1<1);
-        </script>
-      <h4>1&gt;2</h4>
-        <script>
-          document.write(1>2);
-        </script>
-      <h4>2&gt;1</h4>
-        <script>
-          document.write(2>1);
-        </script>
+      <div id="grid">
+        <div class="left">
+        <h4>1&lt;2</h4>
+          <script>
+            document.write(1<2);
+          </script>
+        <h4>1&lt;1</h4>
+          <script>
+            document.write(1<1);
+          </script>
+        <h4>1&gt;2</h4>
+          <script>
+            document.write(1>2);
+          </script>
+        <h4>2&gt;1</h4>
+          <script>
+            document.write(2>1);
+          </script>
+        </div>
+        <img src="data/0305/Comparison.png">
       </div>
-      <img src="data/0305/Comparison.png">
     </div>
   </body>
 </html>

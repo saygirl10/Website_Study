@@ -3,25 +3,31 @@
   <head>
     <meta charset="utf-8">
     <title>JS - Loop & Array</title>
-    <style media="screen">
+    <style>
       body {
+        margin: 0;
+      }
+      .contents {
         margin-left: 20px;
       }
-      .grid {
+      h1 {
+        padding-left: 10px;
+      }
+      #grid {
         display: grid;
         grid-template-columns: 160px 1fr;
       }
       img {
         width: 400px;
       }
-      .title_grid {
+      #title_grid {
         display: grid;
         grid-template-columns: 230px 1fr;
         border-bottom: 3px double saddlebrown;
       }
       span {
-        margin-top: auto;
         margin-left: auto;
+        margin-top: auto;
       }
       input {
         padding: 7px;
@@ -30,25 +36,26 @@
     </style>
   </head>
   <body>
-    <div class="title_grid">
+    <div id="title_grid">
       <h1>Loop & Array</h1>
       <span><a href="3_JavaScript.html"><input type="button" value="JavaScript"></a></span>
     </div>
-
-    <h2>My Family</h2>
-      <div class="grid">
-        <ul>
-          <script>
-            var family = ['hyeonjeong','soyeon','misun','seonghoon'];
-            var i = 0;
-              while (i < family.length) {
-                document.write('<li>'+family[i]+'</li>');
-                i = i + 1;
-              }
-          </script>
-        </ul>
-        <img src="data/0305/Array & Loop.png">
-      </div>
+    <div class="contents">
+      <h2>My Family</h2>
+        <div id="grid">
+          <ul>
+            <script>
+              var family = ['hyeonjeong','soyeon','misun','seonghoon'];
+              var i = 0;
+                while (i < family.length) {
+                  document.write('<li>'+family[i]+'</li>');
+                  i = i + 1;
+                }
+            </script>
+          </ul>
+          <img src="data/0305/Array & Loop.png">
+        </div>
+    </div>
 
 
   </body>

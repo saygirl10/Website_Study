@@ -5,7 +5,13 @@
     <title>JS - Array Syntax</title>
     <style>
       body {
+        margin: 0;
+      }
+      .contents {
         margin-left: 20px;
+      }
+      h1 {
+        padding-left: 10px;
       }
       h2 {
         display: inline;
@@ -15,7 +21,7 @@
         width: 500px;
         margin-left: 35px;
       }
-      .title_grid {
+      #title_grid {
         display: grid;
         grid-template-columns: 400px 1fr;
         border-bottom: 3px double saddlebrown;
@@ -31,13 +37,13 @@
     </style>
   </head>
   <body>
-    <div class="title_grid">
+    <div id="title_grid">
       <h1>Array : 배열 // Syntax(문법)</h1>
       <span><a href="3_JavaScript.html"><input type="button" value="JavaScript"></a></span>
     </div>
-    <h4>코드: var family = ['hyeonjeong','soyeon'];
+    <div class="contents">
+      <h4>코드: var family = ['hyeonjeong','soyeon'];
       <br>-&gt; family라는 수납상자 안에 hyeonjeong과 soyeon이 들어있다.</h4><br>
-
       <h2>배열을 가져오는 방법?</h2>
       코드: document.write(family[인덱스넘버]);<br>
         <script>
@@ -64,5 +70,6 @@
           document.write(family.length);
         </script>
       <img src="data/0305/Array count.png"> <br><br>
+    </div>
   </body>
 </html>
