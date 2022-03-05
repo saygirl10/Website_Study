@@ -1,0 +1,62 @@
+<!DOCTYPE html>
+<html lang="en" dir="ltr">
+  <head>
+    <meta charset="utf-8">
+    <title>JS - Loop</title>
+    <style>
+      body {
+        margin-left: 20px;
+      }
+      h2 {
+        display: inline;
+      }
+      .grid {
+        display: grid;
+        grid-template-columns: 140px 1fr;
+      }
+      img {
+        width: 350px;
+        margin-top: auto;
+        margin-bottom: auto;
+        margin-left: 30px;
+      }
+      .title_grid {
+        display: grid;
+        grid-template-columns: 200px 1fr;
+        border-bottom: 3px double saddlebrown;
+      }
+      span {
+        margin-top: auto;
+        margin-left: auto;
+      }
+      input {
+        padding: 7px;
+        font-size: 13px;
+      }
+    </style>
+  </head>
+  <body>
+    <div class="title_grid">
+      <h1>반복문. Loop</h1>
+      <span><a href="3_JavaScript.html"><input type="button" value="JavaScript"></a></span>
+    </div>
+    <h2>while () {&nbsp&nbsp&nbsp}</h2> // Loop구간 4번 반복.
+
+    <div class="grid">
+      <ul>
+        <script>
+          document.write('<li>1 : normal</li>');
+          var i = 0;
+          while (i<4) {
+            document.write('<li>2 : Loop</li>');
+            document.write('<li>3 : Loop</li>');
+            i = i + 1;
+          }
+          document.write('<li>4 : Normal</li>');
+        </script>
+      </ul>
+      <img src="data/0305/Loop.png">
+    </div>
+
+  </body>
+</html>

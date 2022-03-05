@@ -4,6 +4,19 @@
     <meta charset="utf-8">
     <title>JavaScript</title>
     <link rel="stylesheet" href="style.css">
+    <style media="screen">
+      h3 {
+        margin-bottom: 10px;
+      }
+      .JavaScript_Study {
+        padding-left: 30px;
+        border-top: 2px solid powderblue;
+        border-bottom: 2px solid powderblue;
+      }
+      #grid {
+        margin-bottom: 50px;
+      }
+    </style>
   </head>
   <body>
     <h1 id="h1"><a href="index.html">WEB</a></h1>
@@ -72,5 +85,33 @@
     alist.color=properties[3];
     ">
 -->
+<!--
+    <div class="JavaScript_Study">
+      <h3>&lt;JavaScript Study&gt;</h3>
+      <ol class="JS_study_list">
+        <li><a href="ex4.html">비교연산자와 블리언 // JS - Comparison operator & Boolean</a></li>
+        <li><a href="ex5.html">조건문 // JS - Comditional Statement</a></li>
+        <li><a href="ex6.html">배열 // JS - Array Syntax</a></li>
+        <li><a href="ex7.html">반복문 // JS - Loop</a></li>
+        <li><a href="ex8.html">배열과 반복문 // JS - Loop & Array</a></li>
+      </ol>
+    </div>
+-->
+    <div class="JavaScript_Study">
+      <h3>&lt;JavaScript Study&gt;</h3>
+        <ol>
+          <script>
+            var JS_study = ['비교연산자와 블리언 // JS - Comparison operator & Boolean','조건문 // JS - Comditional Statement','배열 // JS - Array Syntax','반복문 // JS - Loop','배열과 반복문 // JS - Loop & Array'];
+            var linklist = ['ex4','ex5','ex6','ex7','ex8'];
+
+            var i = 0;
+            while (i < JS_study.length) {
+              document.write('<li><a href="'+linklist[i]+'.html">'+JS_study[i]+'</a></li>');
+              i = i + 1;
+            }
+          </script>
+        <ol>
+    </div>
+
   </body>
 </html>

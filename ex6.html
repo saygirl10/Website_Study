@@ -1,0 +1,68 @@
+<!DOCTYPE html>
+<html lang="en" dir="ltr">
+  <head>
+    <meta charset="utf-8">
+    <title>JS - Array Syntax</title>
+    <style>
+      body {
+        margin-left: 20px;
+      }
+      h2 {
+        display: inline;
+      }
+      img {
+        display: block;
+        width: 500px;
+        margin-left: 35px;
+      }
+      .title_grid {
+        display: grid;
+        grid-template-columns: 400px 1fr;
+        border-bottom: 3px double saddlebrown;
+      }
+      span {
+        margin-top: auto;
+        margin-left: auto;
+      }
+      input {
+        padding: 7px;
+        font-size: 13px;
+      }
+    </style>
+  </head>
+  <body>
+    <div class="title_grid">
+      <h1>Array : 배열 // Syntax(문법)</h1>
+      <span><a href="3_JavaScript.html"><input type="button" value="JavaScript"></a></span>
+    </div>
+    <h4>코드: var family = ['hyeonjeong','soyeon'];
+      <br>-&gt; family라는 수납상자 안에 hyeonjeong과 soyeon이 들어있다.</h4><br>
+
+      <h2>배열을 가져오는 방법?</h2>
+      코드: document.write(family[인덱스넘버]);<br>
+        <script>
+          var family = ['hyeonjeong','soyeon'];
+            document.write(family[0]+'<br>');
+            document.write(family[1]+'<br>');
+        </script>
+      <img src="data/0305/Array.png"> <br><br>
+
+      <h2>배열을 추가하는 방법?</h2>
+      코드: family.push('추가할 원소1','추가할 원소2')<br>
+        <script>
+          family.push('misun','seonghoon');
+        </script>
+        <script>
+          document.write(family[2]+'<br>');
+          document.write(family[3]+'<br>');
+        </script>
+      <img src="data/0305/Array add data.png"> <br><br>
+
+      <h2>배열의 인덱스는 총 몇개?</h2>
+      코드: document.write(family.length);<br>
+        <script>
+          document.write(family.length);
+        </script>
+      <img src="data/0305/Array count.png"> <br><br>
+  </body>
+</html>
