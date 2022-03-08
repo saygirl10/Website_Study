@@ -1,0 +1,170 @@
+<!DOCTYPE html>
+<html lang="en" dir="ltr">
+  <head>
+    <meta charset="utf-8">
+    <title>JS - Function</title>
+  </head>
+  <style>
+    body {
+      margin: 0;
+    }
+    .contents {
+      margin-left: 20px;
+    }
+    .left {
+      text-align: center;
+      margin-top: auto;
+      margin-bottom: auto;
+    }
+    ul {
+      margin-top: auto;
+      margin-bottom: auto;
+    }
+    h1 {
+      padding-left: 10px;
+    }
+    h2 {
+      display: inline;
+    }
+    .line {
+      border-top: 1px solid gray;
+      padding-top: 15px;
+    }
+    #title_grid {
+      display: grid;
+      grid-template-columns: 270px 1fr;
+      border-bottom: 3px double saddlebrown;
+      margin-bottom: 30px;
+    }
+    .button {
+      margin-top: auto;
+      margin-left: auto;
+    }
+    input {
+      padding: 7px;
+      font-size: 13px;
+    }
+    #firstGrid {
+      display: grid;
+      grid-template-columns: 100px 1fr;
+    }
+    #secondGrid {
+      display: grid;
+      grid-template-columns: 100px 1fr;
+    }
+    #thirdGrid {
+      display: grid;
+      grid-template-columns: 100px 1fr;
+    }
+    #forthGrid {
+      display: grid;
+      grid-template-columns: 100px 1fr;
+    }
+    img {
+      width: 300px;
+      display: block;
+      margin-left: 30px;
+      padding-top: 10px;
+      padding-bottom: 10px;
+    }
+    .additional {
+      padding-left: 10px;
+    }
+  </style>
+  <body>
+    <div id="title_grid">
+      <h1>Function</h1>
+      <span class="button"><a href="3_JavaScript.html"><input type="button" value="JavaScript"></a></span>
+    </div>
+    <div class="contents">
+      <h2>Basic</h2>
+        코드:function list () {   }<br>
+        <div class="additional">리스트가 일정하지 않게 반복되면 반복문을 사용할 수 없다.
+          <span>-&gt; 함수(Function) 사용.</span></div><br>
+        <div id="firstGrid">
+          <ul>
+            <script>
+              function list () {
+                document.write('<li>2-1</li>') // 2-1
+                document.write('<li>2-2</li>') // 2-2
+              }
+              document.write('<li>1</li>') // 1
+              list();
+              document.write('<li>3</li>') // 3
+              list();
+            </script>
+          </ul>
+          <div>
+            <img src="data/0308/Function_기본코드(study).png">
+          </div>
+        </div><br><br>
+
+      <div class="line"></div>
+      <h2>Parameter & Argumnet</h2>
+        코드: function 함수이름(parameter) {document.write();}<br>
+        <span style="padding-left:284px;">함수이름(argument);</span><br><br>
+        <div id="secondGrid">
+          <div class="left">
+            <script>
+              function sum(left,right) {
+                document.write(left+right+'<br>');
+              }
+              sum(2,3); // 5
+              sum(5,6); // 11
+              sum(7,2); // 9
+            </script>
+          </div>
+          <div>
+            <img src="data/0308/Function_parameter,argument1(study).png">
+          </div>
+        </div><br>
+        <div class="additional">함수 안에 document.write 코드를 사용하는 것은, 해당 코드에 알맞은 값을 단지 웹에 출력해 주는 것 일뿐. 이 함수를 다른 용도로 사용하지 못한다.<br>
+        따라서 style속성을 지정하려면 원하는 갯수만큼의 함수를 만들어야 한다.</div><br>
+        <div id="thirdGrid">
+          <div class="left">
+            <script>
+              function sumColorViolet(left,right) {
+                document.write('<div style="color:violet;">'+(left+right)+'</div>')
+              }
+              function sumFontsize(left,right) {
+                document.write('<div style="font-size:40px;">'+(left+right)+'</div>')
+              }
+              function sumColorDarkgray(left,right) {
+                document.write('<div style="color:darkgray;">'+(left-right)+'</div>')
+              }
+              sumColorViolet(10,10);  // violet20
+              sumFontsize(5,10);  // big15
+              sumColorDarkgray(9,7);  // darkgray2
+            </script>
+          </div>
+          <div>
+            <img src="data/0308/Function_parameter,argument2(study).png">
+          </div>
+        </div><br><br>
+
+      <div class="line"></div>
+      <h2>Return</h2>
+        코드: function sum2(left,right) {return left+right;}<br>
+        <span style="padding-left:111px;">document.write(sum2(7,8))</span><br><br>
+      <div id="forthGrid">
+        <div class="left">
+          <script>
+            function sum2(left,right) {
+              return left+right
+            }
+            document.write(sum2(7,8)+'<br>');  // 15
+            document.write('<div style="color:violet;">'+sum2(2,3)+'</div>')  // violet5
+            document.write('<div style="font-size:20px; color:blue;"><strong>'+sum2(25,5)+'</strong></div>')  // bluestrong30
+          </script>
+        </div>
+        <div>
+          <img src="data/0308/Function_return(study).png">
+        </div>
+      </div><br>
+      <div class="additional">
+        Return은 매개변수(parameter)를 통해 들어온 인자(argument)를 함수 내의 코드에 따라서 연산하여 출력함으로서, 해당 함수를 이용하여 여러가지 style속성 지정 등의 다양한 활용을 할 수 있다.
+      </div>
+    </div>
+
+  </body>
+</html>
