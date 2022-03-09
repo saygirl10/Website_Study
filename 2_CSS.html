@@ -4,11 +4,12 @@
     <meta charset="utf-8">
     <title>CSS</title>
     <link rel="stylesheet" href="style.css">
+    <script type="text/javascript" src="test.js"></script>
   </head>
   <body>
     <h1><a href="index.html">WEB</a></h1>
     <div id="grid">
-      <div class="left">
+      <div class="leftTop">
         <ul>
           <li><a href="1_HTML.html">HTML</a></li>
           <li><a href="2_CSS.html">CSS</a></li>
@@ -16,39 +17,7 @@
         </ul>
         <div class="input">
           <input type="button" value="Night_Mode" onclick="
-            if (this.value === 'Night_Mode') {
-              var full = document.querySelector('body');
-              var H1 = document.querySelector('h1');
-              var Left = document.querySelector('.left');
-              full.style.backgroundColor='black';
-              full.style.color='gray';
-              this.value='Day_Mode';
-              H1.style.borderColor='Tan';
-              Left.style.borderColor='Tan';
-
-                var i = 0;
-                var alist = document.querySelectorAll('a');
-                while (i < alist.length) {
-                  alist[i].style.color='gray';
-                  i = i + 1;
-                }
-            } else {
-              var full = document.querySelector('body');
-              var H1 = document.querySelector('h1');
-              var Left = document.querySelector('.left');
-              full.style.backgroundColor='white';
-              full.style.color='black';
-              this.value='Night_Mode';
-              H1.style.borderColor='brown';
-              Left.style.borderColor='brown';
-
-                var i = 0;
-                var alist = document.querySelectorAll('a');
-                while (i < alist.length) {
-                  alist[i].style.color='black';
-                  i = i + 1;
-                }
-            }
+            button(this);
           ">
         </div>
       </div>
@@ -56,6 +25,7 @@
         <h2>CSS</h2>
         Cascading Style Sheets ( CSS ) is a style sheet language that describes how a markup language is actually displayed [1] , mainly used for HTML and XHTML , and can also be used in XML . can It is a standard of W3C , and the degree of freedom in defining layout and style is high.
       </div>
+      <div class="leftBottom"></div>
     </div>
   </body>
 </html>
