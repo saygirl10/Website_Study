@@ -4,12 +4,12 @@
     <meta charset="utf-8">
     <title>JavaScript</title>
     <link rel="stylesheet" href="style.css">
-    <script type="text/javascript" src="test.js"></script>
+    <script type="text/javascript" src="normal.js"></script>
   </head>
   <body>
     <h1 id="h1"><a href="index.html">WEB</a></h1>
     <div id="grid">
-      <div class="leftTop">
+      <div class="leftVertical">
         <ul>
           <li><a href="1_HTML.html">HTML</a></li>
           <li><a href="2_CSS.html">CSS</a></li>
@@ -27,11 +27,30 @@
         Mozilla Foundation 's prototype-based programming language , which corresponds to a scripting language . All web browsers have a built-in interpreter, except for special purposes . Today , along with HTML and CSS , it is one of the elements that compose the web. While HTML is responsible for the basic structure of a web page and CSS is responsible for design, JavaScript is responsible for operating the web page on the client side.
       </div>
 
-      <div class="leftBottom"></div>
+      <div class="leftVertical2"></div>
       <div class="JavaScript_Study">
         <h3>&lt;JavaScript Study&gt;</h3>
-          <ol><script>study();</script><ol>
+            <ol>
+            <script>
+              for (var key in studyObject) {
+                document.write('<li><a href='+key+'.html>'+studyObject[key]+'</a></li>');
+              };
+            </script>
+            </ol>
       </div>
+
+
+      <script>
+        for (var key in studyTest) {
+          document.write(studyTest[key]+"비교연산자와 블리언");
+        };
+      </script>
+
+
+
+
+
+
     </div>
   </body>
 </html>

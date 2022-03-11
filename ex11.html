@@ -1,0 +1,163 @@
+<!DOCTYPE html>
+<html lang="en" dir="ltr">
+  <head>
+    <meta charset="utf-8">
+    <title>JS - Object</title>
+    <link rel="stylesheet" href="studyJavaScript.css">
+    <style>
+      h3 {
+        display: inline;
+      }
+      #title_grid {
+        display: grid;
+        grid-template-columns: 230px 1fr;
+        border-bottom: 3px double saddlebrown;
+      }
+      img {
+        width: 450px;
+        padding-top: 10px;
+        padding-bottom: 10px;
+      }
+      .text {
+        margin: auto;
+      }
+      #getData {
+        display: grid;
+        grid-template-columns: 480px 100px;
+      }
+      #addData {
+        display: grid;
+        grid-template-columns: 480px 100px;
+      }
+      #iterateKey {
+        display: grid;
+        grid-template-columns: 480px 100px;
+      }
+      #iterateData {
+        display: grid;
+        grid-template-columns: 480px 100px;
+      }
+      #iterateKeyData {
+        display: grid;
+        grid-template-columns: 480px 180px;
+      }
+    </style>
+  </head>
+  <body>
+    <div id="title_grid">
+      <h1>object</h1>
+      <span class="button"><a href="3_JavaScript.html"><input type="button" value="JavaScript"></a></span>
+    </div>
+    <div class="contents">
+      <h2>Member</h2>
+        <h3>* 객체 생성 방법?</h3>
+        코드: var 객체이름 = {key1 : "data1", key2 : "data2"};
+        <script>
+          var family = {
+            first : "hyeonjeong",
+            second : "soyeon"
+          };
+        </script>
+        <div>
+        <img src="data/0311/Object(study)-Create.png" style="width:300px;">
+        </div><br>
+
+        <h3>* 객체의 data를 가져오는 방법?</h3>
+        코드: document.write(객체이름.key); <br>
+        <div id="getData">
+          <div>
+            <img src="data/0311/Object(study)-Get data in Object.png">
+          </div>
+          <div class="text">
+          <script>
+            document.write(family.first+'<br>');
+            document.write(family.second+'<br>');
+          </script>
+          </div>
+        </div><br>
+
+        <h3>* 객체에 data를 추가하는 방법?</h3>
+        코드: 객체이름.추가할 데이터의 key = "추가할 데이터"; <br>
+        <div id="addData">
+          <div>
+            <img src="data/0311/Object(study)-Add data in Object.png">
+          </div>
+          <div class="text">
+          <script>
+            family.mom = "misun";
+            family["Big Daddy"] = "seonghoon";        document.write(family.mom+'<br>');
+            document.write(family["Big Daddy"]+'<br>');
+          </script>
+          </div>
+        </div><br>
+
+      <h2>Iterate</h2>
+        <h3>객체의 반복문</h3>
+        코드: for (var key in 객체이름) {&nbsp&nbsp&nbsp&nbsp&nbsp};<br>
+          <script>
+            document.write('<br><strong>&lt;key 값을 모조리 가져오기&gt;</strong>');
+          </script>
+            <div id="iterateKey">
+              <div>
+                <img src="data/0311/Object(study)-Iterate_key.png">
+              </div>
+              <div class="text">
+              <script>
+                  for (var key in family) {
+                    document.write(key+'<br>');
+                  };
+                  // first, second, mom, Big Daddy
+              </script>
+              </div>
+            </div>
+          <script>
+            document.write('<br><strong>&lt;key 값의 data를 모조리 가져오기&gt;</strong>');
+          </script>
+            <div id="iterateData">
+              <div>
+                <img src="data/0311/Object(study)-Iterate_data.png">
+              </div>
+              <div class="text">
+              <script>
+                  for (var key in family) {
+                    document.write(family[key]+'<br>');
+                  };
+                  // hyeonjeong, soyeon, misun, seonghoon
+              </script>
+              </div>
+            </div>
+          <script>
+            document.write('<br><strong>&lt;key 값과 그 data를 모조리 가져오기&gt;</strong>');
+          </script>
+            <div id="iterateKeyData">
+              <div>
+                <img src="data/0311/Object(study)-Iterate_key+data.png">
+              </div>
+              <div class="text">
+              <script>
+                  for (var key in family) {
+                    document.write(key+' : '+family[key]+'<br>');
+                  };
+                  // first : hyeonjeong, second : soyeon, mom : misun, Big Daddy : seonghoon
+              </script>
+              </div>
+            </div><br>
+
+      <h2>Property & Method</h2>
+        <h3>* method 생성 방법?</h3>
+        코드: 객체이름.method이름 = function() {&nbsp&nbsp&nbsp&nbsp&nbsp}; <br><br>
+        <script>
+          family.showAll = function() {
+            for (var key in family) {
+              document.write(key+' : '+family[key]+'<br>');
+            };
+          };
+          family.showAll();
+        </script>
+        <img src="data/0311/Object(study)-Function in Object as Key.png">
+        <script>
+          document.write('<br>showAll 함수도 family라는 객체의 key로 포함되기 때문에, showAll 함수에 해당하는 함수내용이 노출된다.<br>');
+        </script>
+    </div>
+  </body>
+</html>

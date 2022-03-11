@@ -22,7 +22,7 @@ input {
 .input {
   text-align: center;
 }
-.leftTop {
+.leftVertical {
   border-right: 3px double brown;
   margin: 0;
   padding: 13px;
@@ -35,7 +35,7 @@ ul {
 }
 
 /* 3_JavaScript 에만 해당 됨 */
-.leftBottom {
+.leftVertical2 {
   border-right: 3px double brown;
 }
 .JavaScript_Study {
@@ -46,9 +46,6 @@ ul {
 }
 h3 {
   margin-bottom: 10px;
-}
-#grid {
-  margin-bottom: 50px;
 }
 /* 3_JavaScript 에만 해당 됨 */
 @media (max-width:600px) {
@@ -63,7 +60,7 @@ h3 {
     margin-left: auto;
     margin-right: auto;
   }
-  .leftTop {
+  .leftVertical {
     border: none;
   }
   .input {
